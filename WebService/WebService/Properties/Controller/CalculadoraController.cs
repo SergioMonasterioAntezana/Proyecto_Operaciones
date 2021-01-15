@@ -50,5 +50,32 @@ namespace WebService.Properties.Controllers
             return num1 * num2;
         }
 
+        [HttpGet]
+        [Route("division")]
+        public int Divisiong(int num1, int num2)
+        {
+            if (num1 == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return num2 / num1;
+            }
+        }
+        [HttpPost]
+        [Route("division")]
+        public int Divisionp([FromHeader] int num1, [FromHeader] int num2)
+        {
+            if (num1 == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return num2 / num1;
+            }
+        }
+
     }
 }

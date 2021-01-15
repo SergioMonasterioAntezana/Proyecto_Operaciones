@@ -36,5 +36,19 @@ namespace WebService.Properties.Controllers
         {
             return num1 - num2;
         }
+
+        [HttpGet]
+        [Route("multiplicacion")]
+        public int Multiplicaciong(int num1, int num2)
+        {
+            return num1 * num2;
+        }
+        [HttpPost]
+        [Route("multiplicacion")]
+        public int Multiplicacionp([FromHeader] int num1, [FromHeader] int num2)
+        {
+            return num1 * num2;
+        }
+
     }
 }

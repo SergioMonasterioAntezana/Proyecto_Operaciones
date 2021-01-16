@@ -111,5 +111,106 @@ namespace NUnitTestCalculadora
             Assert.AreEqual(esperado, resultado);
 
         }
+
+        [Test]
+        public void TestResta1()
+        {
+            //Arrange=preparacion
+            int num1 = 5;
+            int num2 = 3;
+            int esperado = 2;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            int resultado = calc.Restap(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+        [Test]
+        public void TestResta2()
+        {
+            //Arrange=preparacion
+            int num1 = 4;
+            int num2 = 8;
+            int esperado = -4;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            int resultado = calc.Restap(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+        [Test]
+        public void TestResta3()
+        {
+            //Arrange=preparacion
+            int num1 = 16;
+            int num2 = 16;
+            int esperado = 0;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            int resultado = calc.Restap(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+        [Test]
+        public void TestResta4()
+        {
+            //Arrange=preparacion
+            int num1 = 5;
+            int num2 = 3;
+            int esperado = 2;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            int resultado = calc.Restag(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+        [Test]
+        public void TestResta5()
+        {
+            //Arrange=preparacion
+            int num1 = 7;
+            int num2 = 10;
+            int esperado = -3;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            int resultado = calc.Restag(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+
+        }
+        [Test]
+        public void TestResta6()
+        {
+            //Arrange=preparacion
+            int num1 = 6;
+            int num2 = 6;
+            int esperado = 0;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=ejecucion
+            int resultado = calc.Restag(num1, num2);
+
+            //Assert=verificacion
+            Assert.AreEqual(esperado, resultado);
+
+        }
     }
 }

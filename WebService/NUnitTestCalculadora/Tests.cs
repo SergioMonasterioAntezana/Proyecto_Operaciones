@@ -212,5 +212,114 @@ namespace NUnitTestCalculadora
             Assert.AreEqual(esperado, resultado);
 
         }
+
+        [Test]
+        public void TestMultiplicacion1()
+        {
+            //Arrange=preparacion
+            int num1 = -5;
+            int num2 = -2;
+            int esperado = 10;
+            CalculadoraController calc = new CalculadoraController();
+
+
+            //Act=Ejecution
+            int resultado = calc.Multiplicacionp(num1, num2);
+
+            //Assert=verification
+            Assert.AreEqual(esperado, resultado);
+
+
+        }
+        [Test]
+        public void TestMultiplicacion2()
+        {
+            //Arrange=preparacion
+            int num1 = 4;
+            int num2 = -1;
+            int esperado = -4;
+            CalculadoraController calc = new CalculadoraController();
+
+
+            //Act=Ejecution
+            int resultado = calc.Multiplicacionp(num1, num2);
+
+            //Assert=verification
+            Assert.AreEqual(esperado, resultado);
+
+
+        }
+        [Test]
+        public void TestMultiplicacion3()
+        {
+            //Arrange=preparacion
+            int num1 = 10;
+            int num2 = 10;
+            int esperado = 100;
+            CalculadoraController calc = new CalculadoraController();
+
+
+            //Act=Ejecution
+            int resultado = calc.Multiplicacionp(num1, num2);
+
+            //Assert=verification
+            Assert.AreEqual(esperado, resultado);
+
+
+        }
+        [Test]
+        public void TestMultiplicacion4()
+        {
+            //Arrange=preparacion
+            int num1 = 4;
+            int num2 = 4;
+            int esperado = 16;
+            CalculadoraController calc = new CalculadoraController();
+
+
+            //Act=Ejecution
+            int resultado = calc.Multiplicaciong(num1, num2);
+
+            //Assert=verification
+            Assert.AreEqual(esperado, resultado);
+
+
+        }
+        [Test]
+        public void TestMultiplicacion5()
+        {
+            //Arrange=preparacion
+            int num1 = -8;
+            int num2 = 8;
+            int esperado = -64;
+            CalculadoraController calc = new CalculadoraController();
+
+
+            //Act=Ejecution
+            int resultado = calc.Multiplicaciong(num1, num2);
+
+            //Assert=verification
+            Assert.AreEqual(esperado, resultado);
+
+
+        }
+        [Test]
+        public void TestMultiplicacion6()
+        {
+            //Arrange=preparacion
+            int num1 = -5;
+            int num2 = -5;
+            int esperado = 25;
+            CalculadoraController calc = new CalculadoraController();
+
+
+            //Act=Ejecution
+            int resultado = calc.Multiplicaciong(num1, num2);
+
+            //Assert=verification
+            Assert.AreEqual(esperado, resultado);
+
+
+        }
     }
 }
